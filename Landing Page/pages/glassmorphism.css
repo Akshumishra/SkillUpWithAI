@@ -2,3 +2,112 @@ body{
   background-image: url("../assets/images/bg.webp");
   background-size: cover;
 }
+nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo{
+  display: flex;
+}
+.logo p{
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+.image-1 {
+  background: url('../assets/images/logo_1.png') 50% / cover no-repeat;
+  margin: 135px 275px 0 0;
+  width: 773px;
+  height: 554px;
+}
+.ellipse-11 {
+  opacity: 0.2;
+  border-radius: 142px;
+  margin-bottom: 405px;
+  width: 284px;
+  height: 284px;
+}
+.container-1 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 1332px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.form-container {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+form p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.input-field label {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.input-field input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+}
+.forgot-password {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.login-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.new-user {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+}
+.new-user a {
+  color: #fff;
+  text-decoration: none;
+}
