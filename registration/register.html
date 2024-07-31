@@ -5,36 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <style>
-        .body{
+        body{
             padding: 0;
             margin: 0;
+            background-image: url('bg.jpg');
+            background-size: cover; /* Add this line */
+                background-position: center; /* Add this line */
+                background-repeat: no-repeat; 
+                font-family: 'Times New Roman', Times, serif;
         }
         .contain {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
+                font-family: 'Times New Roman', Times, serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f0f0f0;
+                margin: 0;
+                background-image: url('bg1.webp'); /* Add this line */
+                background-size: cover; /* Add this line */
+                background-position: center; /* Add this line */
+                background-repeat: no-repeat; /* Add this line */
+            
         }
         .form-container {
             margin-left: 750px;
-            margin-top: 100px;
-            background-color: #fff;
+            font-size: 18px;
+            background-color: mistyrose;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 500px;
+            box-shadow: 10px 10px 10px 10px rgba(0.3, 0.3, 0.3, 0.3);
+            padding: 30px;
+            width: 500px;   
+            padding-right: 50px; 
         }
-        .form-container h2 {
+        .form-container h1 {
             text-align: center;
             margin-top: 20px;
+            color: goldenrod;
         }
         .form-container input[type="text"],
         .form-container input[type="number"],
-        .form-container input[type="email"] {
+        .form-container input[type="email"],
+        .form-container input[type="date"],
+        .form-container select,
+        .form-container input[type="password"] {
             width: 100%;
+            margin-right: 20px;
+            font-size: 18px;
             padding: 10px;
             margin: 5px 0 10px 0;
             border: 1px solid #ccc;
@@ -67,7 +83,7 @@
         }
         .form-container .privacy-policy {
             text-align: center;
-            font-size: 12px;
+            font-size: 18px;
             margin-top: 20px;
         }
         .logo{
@@ -92,6 +108,23 @@
             display: flex;
             color: black
           }
+          footer{    width: 100%;
+          }
+          
+          .footerBox{
+              background-color: #000000;
+              background-image: linear-gradient(160deg, #000000 0%, #0d0d11 100%); 
+              width: 100%;
+              text-align: center;
+              min-height: 35px;
+          }
+          
+          .footerBox p {
+              color: azure;
+              font-size: 24px;
+              vertical-align: center;
+              letter-spacing: 1.5px;
+          }
     </style>
 </head>
 <body>
@@ -99,34 +132,44 @@
         <nav>
     <div class="logo">
         <img src="../../Landing Page/assets/images/logo_1.png" alt="">
-        <p><b>SkillUpWithAI</b></p>
+        <p><b><u>SkillUpWithAI</u></b></p>
     </div>
-</nav>
+</nav><br><br>
+<center><p style="font-family: 'Times New Roman', Times, serif; font-size: 45px; margin-left:20px;"><b><i>Registration Form</i></b></p></center><br><br>
 </header>
     <div class="form-container contain">
         <center>
-        <h2>Registration Form</h2>
-        <form>
-            <input type="text" id="idNumber" name="idNumber" placeholder="ID number" required>
+        <form><br>
             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-            <input type="text" id="middleName" name="middleName" placeholder="Middle Name">
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            <input type="text" id="middleName" name="middleName" placeholder="Middle Name" required>
             <input type="number" id="age" name="age" placeholder="Age" required>
-            <div>
-                <label class="gender-label">Gender:</label>
-                <label><input type="radio" name="gender" value="male" required> Male</label>
-                <label><input type="radio" name="gender" value="female" required> Female</label>
-            </div>
+            <input type="date" id="dob" name="DOB" placeholder="Date Of Birth" requird>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected required>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
             <input type="text" id="address" name="address" placeholder="Address" required>
             <input type="text" id="section" name="section" placeholder="Section" required>
             <input type="text" id="course" name="course" placeholder="Course" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
-            <button type="submit" class="submit-btn">Submit</button>
+            <input type="password" id="password" name="password" placeholder="Create Your Password" required>
+            <button type="submit" class="submit-btn"><a href="#" style="text-decoration: none; color:white;">Register</a></button>
             <div class="privacy-policy">
-                By clicking Register, you agree on our Privacy Policy
+                <p style="color: white;">By clicking Register, you agree on our Privacy Policy</p>
             </div>
+            <br><br>
+            <p style="color: white;">Already have Account ? <a href="../Landing Page/pages/login.html" style="text-decoration: none; color: blue;">Login</a></p>
         </form></center>
-    </div>
-
+    </div><br>
+    <footer>
+        <div class="footerBox">
+             <p>
+                 Copyright  &copy; HealthyMunch Pvt Ltd 2024 All Rights Reserved
+             </p>
+        </div>
+     </footer>
 </body>
 </html>
