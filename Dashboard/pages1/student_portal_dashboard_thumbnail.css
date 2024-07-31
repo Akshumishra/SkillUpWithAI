@@ -1,3 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  zoom: 1.58;
+}
 .student-portal-dashboard-thumbnail .search {
   overflow-wrap: break-word;
   font-family: 'Poppins';
@@ -20,10 +27,16 @@
   box-shadow: 5.2px 5.2px 31.3px 5.2px rgba(0, 0, 0, 0.24);
   border-radius: 234.5px;
   border: 2.6px solid #925FE2;
-  background: url('../assets/images/frame_19.jpeg') 50% / cover no-repeat, linear-gradient(#FFFFFF, #FFFFFF);
+  background: url('../assets1/images/frame_19.jpeg') 50% / cover no-repeat, linear-gradient(#FFFFFF, #FFFFFF);
   margin: 0.5px 6.8px 0.5px 0;
   width: 31.3px;
   height: 31px;
+}
+.student-portal-dashboard{
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  box-shadow: 5.2px 5.2px 31.3px 5.2px rgba(59, 30, 98, 0.24);
 }
 .student-portal-dashboard-thumbnail .rahul {
   margin: 0 0.7px;
@@ -311,7 +324,7 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .backpack {
-  background: url('../assets/images/backpack.png') 50% / cover no-repeat;
+  background: url('../assets1/images/backpack.png') 50% / cover no-repeat;
   transform: rotate(8.841deg);
   position: absolute;
   right: 221.5px;
@@ -320,11 +333,11 @@
   height: 119.2px;
 }
 .student-portal-dashboard-thumbnail .scholarcap-scroll {
-  background: url('../assets/images/scholarcap_scroll.png') 50% / cover no-repeat;
+  background: url('../assets1/images/scholarcap_scroll.png') 50% / cover no-repeat;
   transform: rotate(-28.13deg);
   position: absolute;
   left: 319.8px;
-  bottom: -80.1px;
+  bottom: -1.9rem;
   width: 212.4px;
   height: 212.4px;
 }
@@ -403,7 +416,7 @@
   height: 178.5px;
 }
 .student-portal-dashboard-thumbnail .hat-1 {
-  background: url('../assets/images/hat.png') 50% / cover no-repeat;
+  background: url('../assets1/images/hat.png') 50% / cover no-repeat;
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -414,7 +427,7 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .mouth {
-  background: url('../assets/images/change_color.png') 50% / cover no-repeat;
+  background: url('../assets1/images/change_color.png') 50% / cover no-repeat;
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -425,7 +438,7 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .hair {
-  background: url('../assets/images/hair.png') 50% / cover no-repeat;
+  background: url('../assets1/images/hair.png') 50% / cover no-repeat;
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -436,7 +449,7 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .face {
-  background: url('../assets/images/face.png') 50% / cover no-repeat;
+  background: url('../assets1/images/face.png') 50% / cover no-repeat;
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -447,7 +460,7 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .eye-eyebrow {
-  background: url('../assets/images/eye_eyebrow.png') 50% / cover no-repeat;
+  background: url('../assets1/images/eye_eyebrow.png') 50% / cover no-repeat;
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -458,7 +471,7 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .body {
-  background: url('../assets/images/body.png') 50% / cover no-repeat;
+  background: url('../assets1/images/body.png') 50% / cover no-repeat;
   position: absolute;
   left: 50%;
   bottom: 0px;
@@ -470,7 +483,7 @@
 }
 .student-portal-dashboard-thumbnail .college-student {
   border-radius: 5.9px;
-  background: url('../assets/images/bag.png') 50% / cover no-repeat;
+  background: url('../assets1/images/bag.png') 50% / cover no-repeat;
   position: absolute;
   top: -11.7px;
   right: 278.2px;
@@ -486,7 +499,6 @@
   position: relative;
   margin: 0 16.1px 31.4px 0.1px;
   padding: 32.3px 33.9px 31.5px 33.9px;
-  width: fit-content;
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .finanace {
@@ -515,8 +527,17 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .container {
-  background: url('../assets/images/image_1.png') 50% / cover no-repeat;
-  width: 68px;
+  margin-left: 20px;
+  background: url('../assets1/images/image_1.png') 99% / cover no-repeat;
+  width: 99px;
+  margin-top: -15px;
+  height: 94px;
+  margin-right: -99rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.student-portal-dashboard-thumbnail .container1 {
   height: 68px;
 }
 .student-portal-dashboard-thumbnail .frame-30 {
@@ -527,15 +548,16 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .upcoming-assessment {
-  overflow-wrap: break-word;
   font-family: 'PoetsenOne';
   font-weight: 400;
-  font-size: 10.4px;
+  letter-spacing: 1px;
+  margin-left: 40px;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
 }
 .student-portal-dashboard-thumbnail .august-52024 {
   margin: 0 9.1px 0 10.1px;
-  overflow-wrap: break-word;
+  margin-left: 38px;
   font-family: 'Poppins';
   font-weight: 600;
   font-size: 13px;
@@ -551,12 +573,11 @@
 .student-portal-dashboard-thumbnail .pm-630-pm {
   position: absolute;
   left: 50%;
-  bottom: 9px;
+  bottom: 6px;
   translate: -50% 0;
-  overflow-wrap: break-word;
   font-family: 'PoetsenOne';
   font-weight: 400;
-  font-size: 10.4px;
+  font-size: 11px;
   color: #C19494;
 }
 .student-portal-dashboard-thumbnail .frame-17 {
@@ -570,35 +591,36 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .container-1 {
-  background: url('../assets/images/image_2.png') 50% / cover no-repeat;
+  background: url('../assets1/images/image_2.png') 50% / cover no-repeat;
   margin: 0 10.6px 2px 12.6px;
   width: 77px;
   height: 85px;
 }
 .student-portal-dashboard-thumbnail .mentorship-session {
-  overflow-wrap: break-word;
   font-family: 'PoetsenOne';
-  font-weight: 400;
-  font-size: 10.4px;
-  color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    margin-left: -4px;
+    color: rgba(0, 0, 0, 0.5);
 }
 .student-portal-dashboard-thumbnail .container-12 {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
+  margin-left: 38px;
 }
 .student-portal-dashboard-thumbnail .today {
   position: absolute;
-  left: 50%;
-  bottom: 15px;
-  translate: -50% 0;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 700;
-  font-size: 13px;
-  color: #000000;
+    left: 50%;
+    bottom: 24px;
+    translate: -50% 0;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 13px;
+    color: #000000;
 }
 .student-portal-dashboard-thumbnail .pm-onwards {
   position: absolute;
@@ -608,7 +630,7 @@
   overflow-wrap: break-word;
   font-family: 'PoetsenOne';
   font-weight: 400;
-  font-size: 10.4px;
+  font-size: 11px;
   color: #C19494;
 }
 .student-portal-dashboard-thumbnail .frame-18 {
@@ -620,11 +642,10 @@
   display: flex;
   padding: 10.4px 0 0 5px;
   width: 197.6px;
-  height: 144px;
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .container-2 {
-  background: url('../assets/images/image.jpeg') 50% / cover no-repeat;
+  background: url('../assets1/images/image.jpeg') 50% / cover no-repeat;
   margin: 0 8px 8px 0;
   width: 70px;
   height: 92px;
@@ -670,14 +691,6 @@
   font-weight: 600;
   font-size: 13px;
   color: #925FE2;
-}
-.student-portal-dashboard-thumbnail .container {
-  margin: 0 1px 7.4px 0.7px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 661.5px;
-  box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .object-oriented-programming {
   margin-bottom: 15.5px;
@@ -730,16 +743,9 @@
   box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .container-2 {
-  background: url('../assets/images/icon_image.png') 50% / cover no-repeat;
-  position: absolute;
-  left: 50%;
   top: 0px;
-  translate: -50% 0;
   display: flex;
   padding: 8.7px 8.3px 18.3px 8.3px;
-  width: 63px;
-  height: 52.1px;
-  box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .icon-container {
   position: relative;
@@ -752,14 +758,15 @@
 }
 .student-portal-dashboard-thumbnail .frame-171 {
   box-shadow: 5.2px 5.2px 31.3px 5.2px rgba(0, 0, 0, 0.08);
-  border-radius: 15.6px;
-  border: 2.6px solid #925FE2;
-  background: rgba(156, 111, 228, 0.3);
-  margin-right: 15.6px;
-  display: flex;
-  flex-direction: row;
-  padding: 13px 18.4px 12.6px 18.2px;
-  box-sizing: border-box;
+    border-radius: 15.6px;
+    border: 2.6px solid #925FE2;
+    background: rgba(156, 111, 228, 0.3);
+    margin-right: 15.6px;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    padding: 13px 18.4px 12.6px 18.2px;
+    box-sizing: border-box;
 }
 .student-portal-dashboard-thumbnail .fundamentals-of-database-systems {
   margin: 0 0 15.5px 6.5px;
@@ -775,6 +782,7 @@
   overflow-wrap: break-word;
   font-family: 'Poppins';
   font-weight: 600;
+  padding-left: 25px;
   font-size: 11.7px;
   color: #FFFFFF;
 }
@@ -810,6 +818,7 @@
 .student-portal-dashboard-thumbnail .frame-35 {
   display: flex;
   flex-direction: row;
+  column-gap: 7.8px;
   align-self: flex-start;
   width: fit-content;
   box-sizing: border-box;
@@ -820,17 +829,11 @@
   flex-direction: column;
   box-sizing: border-box;
 }
-.student-portal-dashboard-thumbnail .ellipse-16 {
+.student-portal-dashboard-thumbnail .ellipse-1 {
   width: 58px;
   height: 60.6px;
-}
-.student-portal-dashboard-thumbnail .ellipse-17 {
-  width: 58px;
-  height: 60.6px;
-}
-.student-portal-dashboard-thumbnail .ellipse-18 {
-  width: 58px;
-  height: 60.6px;
+  border-radius: 50px;
+  border: 2px #213e78 solid;
 }
 .student-portal-dashboard-thumbnail .frame-48 {
   margin: 0 0px 15.6px 1.3px;
@@ -852,22 +855,24 @@
 }
 .student-portal-dashboard-thumbnail .scholarship-test-for-ar-vr {
   position: relative;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 10.4px;
-  color: #000000;
+    overflow-wrap: break-word;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #000000;
 }
-.student-portal-dashboard-thumbnail .the-upcoming-scholarship-test-is-on-30-th-august-2024-interested-students-can {
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  translate: -50% 0;
-  overflow-wrap: break-word;
+.student-portal-dashboard-thumbnail .the-upcoming-scholarship-test-is-on-30-th-august-2024-interested-students-can p{
+  /* overflow-wrap: break-word; */
   font-family: 'Poppins';
   font-weight: 400;
-  font-size: 10.4px;
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  padding-left: 9px;
   color: rgba(0, 0, 0, 0.5);
+}
+.hi{
+  padding-left: 9px;
 }
 .student-portal-dashboard-thumbnail .frame-32 {
   position: relative;
@@ -876,8 +881,8 @@
 }
 .student-portal-dashboard-thumbnail .see-more {
   position: absolute;
-  left: 20.8px;
-  top: 50%;
+  left: 8px;
+  top: 52%;
   translate: 0 -50%;
   overflow-wrap: break-word;
   font-family: 'Poppins';
@@ -904,12 +909,14 @@
 }
 .student-portal-dashboard-thumbnail .see-all-1 {
   margin: 76.2px 0px 233.4px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 13px;
-  color: #925FE2;
+    /* display: inline-block; */
+    /* overflow-wrap: break-word; */
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 10px;
+    margin-top: 80px;
+    margin-left: -60px;
+    color: #925FE2;
 }
 .student-portal-dashboard-thumbnail .container-7 {
   display: flex;
