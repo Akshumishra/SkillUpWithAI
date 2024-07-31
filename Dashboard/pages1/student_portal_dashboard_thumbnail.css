@@ -801,10 +801,14 @@ body{
   flex-direction: column;
   box-sizing: border-box;
 }
+header{
+  display: flex;
+  background-color: #000000;
+}
 nav{
   background-color: rgb(13, 14, 13);
   width: 100%;
-  height: 100px;
+  height: 100hv;
   color: rgb(226, 231, 231);
   display: flex;
   justify-content: space-around;
@@ -812,18 +816,19 @@ nav{
 }
 .logo{
   display: flex;
-  margin-left: -55px;
+  margin-left: -65px;
 }
 .logo p{
   font-size: 1.5em;
   letter-spacing: 2px;
-  padding-top: 12%;
+  color: white;
+  padding-top: 14%;
   padding-left: 9%;
   font-family: 'Times New Roman', Times, serif;
 }
 .logo img{
-  width: 107px;
-  height: 107px;
+  width: 110px;
+  height: 110px;
 }
 .menu a{
   text-decoration: none;
