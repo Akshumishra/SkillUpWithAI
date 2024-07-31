@@ -1,53 +1,31 @@
-{
-	padding: 8vw 8vw 8vw 8vw;
-	text-align: center;
+#chat-container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
 
-#course .course-box
-{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 1rem;
-	margin-top: 50px;
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 
-#course .courses
-{
-	text-align: start;
-	background: #edf1f2;
-	height: 100%;
-	position: relative;
+.user-message, .ai-message {
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-#course .courses img
-{
-	width: 100%;
-	height: 60%;
-	background-size: cover;
-	background-position: center;
+.user-message {
+    text-align: right;
+    color: blue;
 }
 
-#course .courses .details
-{
-	padding: 15px 15px 0 15px;
-}
-
-#course .courses .details i
-{
-	color: #fdc93b;
-	font-size: .9rem;
-}
-
-#course .courses .cost
-{
-	background-color: rgb(74, 74, 136);
-	color: #fff;
-	line-height: 70px;
-	width: 70px;
-	height: 70px;
-	text-align: center;
-	border-radius: 50%;
-	position: absolute;
-	right: 15px;
-	bottom: 100px;
+.ai-message {
+    text-align: left;
+    color: green;
 }
