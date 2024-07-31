@@ -802,7 +802,7 @@ body{
   box-sizing: border-box;
 }
 nav{
-  background-color: rgb(51, 109, 51);
+  background-color: rgb(13, 14, 13);
   width: 100%;
   height: 100px;
   color: rgb(226, 231, 231);
@@ -812,19 +812,18 @@ nav{
 }
 .logo{
   display: flex;
+  margin-left: -55px;
 }
 .logo p{
   font-size: 1.5em;
   letter-spacing: 2px;
   padding-top: 12%;
-  padding-left: 4%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: 9%;
+  font-family: 'Times New Roman', Times, serif;
 }
 .logo img{
-  width: 92px;
-  height: 92px;
-  border: 2px solid indianred;
-  border-radius: 50%;
+  width: 107px;
+  height: 107px;
 }
 .menu a{
   text-decoration: none;
@@ -846,6 +845,9 @@ nav{
 
 .menu a:hover::before{
   width:90%;
+}
+.menu a:hover{
+  color: rgb(186, 199, 75);
 }
 .register a{
   text-decoration: none;
