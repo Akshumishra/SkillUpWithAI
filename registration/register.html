@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .body{
+            padding: 0;
+            margin: 0;
+        }
+        .contain {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .form-container {
+            margin-left: 750px;
+            margin-top: 100px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="radio"] {
+            margin: 0 5px;
+        }
+        .form-container label {
+            display: block;
+            margin: 5px 0;
+        }
+        .form-container .gender-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .form-container .submit-btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .form-container .privacy-policy {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .logo{
+            display: flex;
+            margin-left: -55px;
+          }
+          .logo p{
+            font-size: 3rem;
+            letter-spacing: 3px;
+            padding-top: 12%;
+            padding-left: 9%;
+            font-family: 'Times New Roman', Times, serif;
+          }
+          .logo img{
+            width: 250px;
+            height: 250px;
+            margin-left: 50px;
+          }
+          nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            color: black
+          }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+    <div class="logo">
+        <img src="../../Landing Page/assets/images/logo_1.png" alt="">
+        <p><b>SkillUpWithAI</b></p>
+    </div>
+</nav>
+</header>
+    <div class="form-container contain">
+        <center>
+        <h2>Registration Form</h2>
+        <form>
+            <input type="text" id="idNumber" name="idNumber" placeholder="ID number" required>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            <input type="text" id="middleName" name="middleName" placeholder="Middle Name">
+            <input type="number" id="age" name="age" placeholder="Age" required>
+            <div>
+                <label class="gender-label">Gender:</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <input type="text" id="section" name="section" placeholder="Section" required>
+            <input type="text" id="course" name="course" placeholder="Course" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <button type="submit" class="submit-btn">Submit</button>
+            <div class="privacy-policy">
+                By clicking Register, you agree on our Privacy Policy
+            </div>
+        </form></center>
+    </div>
+
+</body>
+</html>
