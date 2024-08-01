@@ -126,7 +126,7 @@ nav{
 }
 .logo{
   display: flex;
-  margin-left: -255px;
+  margin-left: -105px;
 }
 .logo p{
   font-size: 2rem;
@@ -167,6 +167,9 @@ nav{
   height: 98px;
   width: 98px;
 }
+.dash img:hover{
+  opacity: 2;
+}
 .menu a:hover{
   color: rgb(186, 199, 75);
 }
@@ -181,6 +184,7 @@ h1 {
 
 .form__wrapper {
   position: relative;
+  background-color: rgb(225, 232, 239);
   padding: 1rem;
   border: 2px solid rgba(0, 0, 0, .125);
   border-radius: 4px;
@@ -221,7 +225,7 @@ h1 {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #212324;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -266,7 +270,7 @@ textarea.form-control {
 
 .form-attach__wrapper {
   position: relative;
-  border: 2px dashed #e0e0e0;
+  border: 2px dashed #2e2b2b;
   border-radius: 0.375rem;
   min-height: 50px;
 }
