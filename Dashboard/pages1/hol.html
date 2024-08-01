@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .contain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            background-image: url('bg1.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .form-container {
+            font-size: 18px;
+            background-color: mistyrose;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0.3, 0.3, 0.3, 0.3);
+            padding: 30px;
+            width: 500px;
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: goldenrod;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="email"],
+        .form-container input[type="date"],
+        .form-container select,
+        .form-container input[type="password"] {
+            width: 100%;
+            font-size: 18px;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container .submit-btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .form-container .privacy-policy {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo p {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+        .logo img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            width: 100%;
+        }
+        .footerBox {
+            background-color: #000000;
+            background-image: linear-gradient(160deg, #000000 0%, #0d0d11 100%);
+            width: 100%;
+            text-align: center;
+            min-height: 35px;
+        }
+        .footerBox p {
+            color: azure;
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            padding: 10px 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group select, .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            display: none;
+        }
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .fixed-image {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            width: 100px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../../Landing Page/assets/images/logo_1.png" alt="Logo">
+                <p><b><u>SkillUpWithAI</u></b></p>
+            </div>
+        </nav>
+        <center>
+            <p style="font-family: 'Times New Roman', Times, serif; font-size: 45px;"><b><i>Registration Form</i></b></p>
+        </center>
+    </header>
+    <div class="form-container contain">
+        <div id="registration">
+            <form>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                <input type="text" id="middleName" name="middleName" placeholder="Middle Name" required>
+                <input type="number" id="age" name="age" placeholder="Age" required>
+                <input type="date" id="dob" name="DOB" placeholder="Date Of Birth" required>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" id="address" name="address" placeholder="Address" required>
+                <input type="text" id="section" name="section" placeholder="Section" required>
+                <input type="text" id="course" name="course" placeholder="Course" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Create Your Password" required>
+                <button type="button" class="submit-btn" onclick="showSelection()">Register</button>
+            </form>
+        </div>
+        <div id="selection" class="content">
+            <h2>Select Skills and Language</h2>
+            <div class="form-group">
+                <label for="skill">Choose a skill:</label>
+                <select id="skill">
+                    <option value="programming">Programming</option>
+                    <option value="design">Design</option>
+                    <option value="marketing">Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="language">Choose a language:</label>
+                <select id="language">
+                    <option value="hindi">Hindi</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                </select>
+            </div>
+            <button type="button" class="submit-btn" onclick="displayContent()">Submit</button>
+        </div>
+        <div id="contentDisplay" class="content">
+            <h2>Content for You</h2>
+            <div id="content">
+                <!-- Dynamic content will be displayed here -->
+            </div>
+        </div>
+        <div class="privacy-policy">
+            <p>By clicking Register, you agree on our Privacy Policy</p>
+        </div>
+        <p>Already have an Account? <a href="../Landing Page/pages/login.html" style="text-decoration: none; color: blue;">Login</a></p>
+    </div>
+    <footer>
+        <div class="footerBox">
+            <p>Copyright &copy; HealthyMunch Pvt Ltd 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+    <img src="fixed-image.png" alt="Fixed Image" class="fixed-image">
+    <script>
+        function showSelection() {
+            document.getElementById('registration').style.display = 'none';
+            document.getElementById('selection').style.display = 'block';
+        }
+
+        function displayContent() {
+            const skill = document.getElementById('skill').value;
+            const language = document.getElementById('language').value;
+            let content = `<h2>Your selected skill: ${skill.charAt(0).toUpperCase() + skill.slice(1)}</h2>`;
+            content += `<p>This is the content related to ${skill} in ${language.charAt(0).toUpperCase() + language.slice(1)}.</p>`;
+            document.getElementById('selection').style.display = 'none';}

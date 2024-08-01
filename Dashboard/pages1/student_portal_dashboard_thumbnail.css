@@ -657,6 +657,12 @@ body{
   font-size: 10.4px;
   color: rgba(0, 0, 0, 0.5);
 }
+.redeem-points a{
+  text-decoration: none;
+}
+.redeem-points a:hover{
+  color: indianred;
+}
 .student-portal-dashboard-thumbnail .frame-191 {
   box-shadow: 5.2px 5.2px 31.3px 5.2px rgba(0, 0, 0, 0.08);
   border-radius: 15.6px;
@@ -854,6 +860,12 @@ nav{
 .menu a:hover{
   color: rgb(186, 199, 75);
 }
+.upcoming-assessment a{
+  text-decoration: none;
+}
+.upcoming-assessment a:hover{
+  color: indianred;
+}
 .register a{
   text-decoration: none;
   color: white;
@@ -983,6 +995,22 @@ nav{
     margin-top: 80px;
     margin-left: -60px;
     color: #925FE2;
+}
+.fixed-image {
+  position: fixed;
+  right: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  bottom: 10px;
+  width: 100px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.personalized-feedback a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.personalized-feedback a:hover{
+  color: black;
 }
 .student-portal-dashboard-thumbnail .container-7 {
   display: flex;

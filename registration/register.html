@@ -125,6 +125,50 @@
               vertical-align: center;
               letter-spacing: 1.5px;
           }
+          .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group select, .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -139,6 +183,7 @@
 </header>
     <div class="form-container contain">
         <center>
+            <div id="registration">
         <form><br>
             <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
             <input type="text" id="lastName" name="lastName" placeholder="Last Name">
@@ -156,20 +201,74 @@
             <input type="text" id="course" name="course" placeholder="Course" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="password" name="password" placeholder="Create Your Password" required>
-            <button type="submit" class="submit-btn"><a href="#" style="text-decoration: none; color:white;">Register</a></button>
+            <button class="submit-btn" type="button" onclick="showSelection()">Register</button>
             <div class="privacy-policy">
                 <p style="color: white;">By clicking Register, you agree on our Privacy Policy</p>
             </div>
             <br><br>
             <p style="color: white;">Already have Account ? <a href="../Landing Page/pages/login.html" style="text-decoration: none; color: blue;">Login</a></p>
-        </form></center>
-    </div><br>
-    <footer>
-        <div class="footerBox">
-             <p>
-                 Copyright  &copy; HealthyMunch Pvt Ltd 2024 All Rights Reserved
-             </p>
+            </form></center>
+            </div></div><br>
+            <div class="form-container contain">
+    <div id="selection" class="content">
+        <center>
+        <h1>Select Skills and Language</h1>
+        <div class="form-group">
+            <label style="color: white;" id="skill" for="skill"><b>Choose a skill:</b></label>
+            <select id="skill">
+                <option value="programming">Programming</option>
+                <option value="design">Design</option>
+                <option value="marketing">Marketing</option>
+            </select>
         </div>
-     </footer>
+        <div class="form-group">
+            <label style="color:white;" id="skill" for="language"><b>Choose a language:</b></label>
+            <select id="language">
+                <option value="hindi">Hindi</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select>
+        </div>
+        <a href="../skill.html"><button type="button" class="submit-btn" onclick="displayContent()">Submit</button></a>
+    </div></center></div>
+
+    <!-- Content Display -->
+    <div id="contentDisplay" class="content">
+        <h1>Content for You</h1>
+        <div id="content">
+            <!-- Dynamic content will be displayed here -->
+        </div>
+    </div>
+</div>
+
+<script>
+    function showSelection() {
+        // Hide the registration form and show the selection form
+        document.getElementById('registration').style.display = 'none';
+        document.getElementById('selection').style.display = 'block';
+    }
+
+    function displayContent() {
+        // Get user selections
+        const skill = document.getElementById('skill').value;
+        const language = document.getElementById('language').value;
+
+        // Generate content based on selections
+        let content = `<h2>Your selected skill: ${skill.charAt(0).toUpperCase() + skill.slice(1)}</h2>`;
+        content += `<p>This is the content related to ${skill} in ${language.charAt(0).toUpperCase() + language.slice(1)}.</p>`;
+
+        // Show content and hide selection form
+        document.getElementById('selection').style.display = 'none';
+        document.getElementById('contentDisplay').style.display = 'block';
+        document.getElementById('content').innerHTML = content;
+    }
+</script>
+<footer>
+    <div class="footerBox">
+         <p>
+             Copyright  &copy; HealthyMunch Pvt Ltd 2024 All Rights Reserved
+         </p>
+    </div></footer>
 </body>
 </html>
