@@ -6,8 +6,27 @@
   <link rel="stylesheet" href="css/form-processing.css">
 </head>
 <body>
+  <header>
+    <nav>
+        <div class="logo">
+            <img src="../../Landing Page/assets/images/logo_1.png" alt="">
+            <p>SkillUpWithAI</p>
+        </div>
+        <div class="menu">
+            <a href="../../Landing Page/pages/educational_website_template.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#explore">Explore</a>
+            <a href="#courses">Courses</a>
+            <a href="../../contact us/contact.html">Contact Us</a>
+        </div>
+        <div class="dash">
+          <a href="../../../SkillUpWithAI/Dashboard/pages1/student_portal_dashboard_thumbnail.html"><img src="../../Dashboard/assets1/images/frame_19.jpeg"></a>
+        </div>
+    </nav>
+</div>
+</header>
   <div class="container">
-    <h1>Feedback Form</h1>
+    <h1 style="margin-top:200px;"><b>Feedback Form</b></h1>
     <div class="form-container form__wrapper">
       <!-- Feedback Form -->
       <form id="feedback-form" action="/feedback/form-processing.php" enctype="multipart/form-data" novalidate>
@@ -15,13 +34,13 @@
           <!-- User Name -->
           <div class="form-group">
             <label for="name" class="control-label">Name</label>
-            <input id="name" type="text" name="name" class="form-control" value="" placeholder="Name" minlength="2" maxlength="30" required="required">
+            <input id="name" type="text" name="name" class="form-control" value="" placeholder="Name" minlength="2" maxlength="30" required="required" required>
             <div class="invalid-feedback"></div>
           </div>
           <!-- User Email -->
           <div class="form-group">
             <label for="email" class="control-label">Email Address</label>
-            <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email Address">
+            <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email Address" aria-required>
             <div class="invalid-feedback"></div>
           </div>
         </div>
